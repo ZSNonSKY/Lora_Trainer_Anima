@@ -1,12 +1,12 @@
 # Lora_Trainer_Anima
-Accessible Google Colab notebooks for Anima Lora training, based on the work of kohya-ss, Linaqruf and hollowstrawberry
+Accessible Google Colab notebooks for Anima LoRA & LoHa training, based on the work of kohya-ss, Linaqruf and hollowstrawberry
 
 |:--|:-:|:-:|
 | 🌟 **Lora Trainer Anima** | [![Open in Colab](https://raw.githubusercontent.com/hollowstrawberry/kohya-colab/main/assets/colab-badge.svg)](https://colab.research.google.com/github/ZSNonSKY/Lora_Trainer_Anima/blob/main/Lora_Trainer_Anima.ipynb) |
 
 # 🌟 Anima Lora Trainer
 
-A fork of [hollowstrawberry](https://github.com/hollowstrawberry)'s [XL Lora Trainer](https://github.com/hollowstrawberry/kohya-colab), rebuilt to train Loras for [Anima](https://huggingface.co/circlestone-labs/Anima) by circlestone-labs — a 2B parameter Diffusion Transformer built on NVIDIA's Cosmos-Predict2, using a Qwen3-0.6B text encoder and the Qwen-Image VAE.
+A fork of [hollowstrawberry](https://github.com/hollowstrawberry)'s [XL Lora Trainer](https://github.com/hollowstrawberry/kohya-colab), rebuilt to train Loras and (Lycoris) Loha's for [Anima](https://huggingface.co/circlestone-labs/Anima) by circlestone-labs — a 2B parameter Diffusion Transformer built on NVIDIA's Cosmos-Predict2, using a Qwen3-0.6B text encoder and the Qwen-Image VAE.
 
 Unlike the original notebook this fork trains directly against [kohya-ss/sd-scripts](https://github.com/kohya-ss/sd-scripts)'s native `anima_train_network.py`, rather than through a wrapper backend, since Anima's training needs (Rectified Flow, no conv layers, an optional LLM adapter) don't map onto the SDXL settings that trainer was built around.
 
